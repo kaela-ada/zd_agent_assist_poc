@@ -18,8 +18,9 @@
         Smooch.createConversation({
 
         }).then((conversation) => {
-          window.localStorage.setItem("smooch_conversation_id", conversation.id);
-          Smooch.sendMessage(message, conversation.id);
+          var thisConvo = Smooch.getDisplayedConversation();
+          window.localStorage.setItem("smooch_conversation_id", thisConvo.id);
+          Smooch.sendMessage(message, thisConvo.id);
         });
       };
 
