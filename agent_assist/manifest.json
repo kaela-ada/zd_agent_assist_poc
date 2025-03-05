@@ -1,0 +1,33 @@
+{
+  "name": "Ada Agent Assist",
+  "author": {
+    "name": "Kaela Chandrasekaran",
+    "email": "kaela.chandrasekaran@ada.support"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "sunco_integration_id",
+      "type": "text",
+      "secure": false,
+      "required": true
+    },
+    {
+      "name": "app_height",
+      "type": "text",
+      "secure": false,
+      "required": false
+    }
+  ],
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
